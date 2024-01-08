@@ -1,5 +1,10 @@
 def three_largest_values(lst):
-    pass
+    if len(lst) < 3:
+        return "La liste est trop petite"
+    
+    sorted_list = sorted(lst, reverse=True)
+    return sorted_list[:3]
+
 
 '''def n_smallest_values(lst, n):
     if len(lst) < n:
